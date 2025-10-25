@@ -23,7 +23,8 @@ class CourseCard extends StatelessWidget {
 
         borderRadius: BorderRadius.circular(5),
 
-        border: BoxBorder.all(color: Colors.grey, width: 2),
+        border: BoxBorder.all(color: Color(
+            0x62C1B7B7), width: 2),
       ),
 
       child: Column(
@@ -38,62 +39,68 @@ class CourseCard extends StatelessWidget {
             ),
           ),
 
-          Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 1),
+           Container(
+              decoration: BoxDecoration(
+                border: Border.symmetric(horizontal: BorderSide(width: 2, color: Color(
+                    0x62C1B7B7)))
+              ),
 
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(2),
-                    color: Color(0xFFEAECF0),
-                  ),
+              child: Row(
 
-                  child: Row(
-                    children: [
-                      //Icon(Icons.punch_clock, size: 11,),
-                      Text(batch, style: TextStyle(fontSize: 10)),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 1),
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 1),
 
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(2),
-                    color: Color(0xFFEAECF0),
-                  ),
-                  child: Row(
-                    children: [
-                      Icon(Icons.person_2_outlined, size: 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(2),
+                      color: Color(0xFFEAECF0),
+                    ),
 
-                      Text(avaible, style: TextStyle(fontSize: 10)),
-                    ],
+                    child: Row(
+                      children: [
+                        //Icon(Icons.punch_clock, size: 11,),
+                        Text(batch, style: TextStyle(fontSize: 8)),
+                      ],
+                    ),
                   ),
-                ),
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 1),
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 1),
 
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(2),
-                    color: Color(0xFFEAECF0),
-                  ),
-                  child: Row(
-                    children: [
-                      Icon(Icons.punch_clock, size: 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(2),
+                      color: Color(0xFFEAECF0),
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(Icons.person_2_outlined, size: 8),
 
-                      Text(duration, style: TextStyle(fontSize: 10)),
-                    ],
+                        Text(avaible, style: TextStyle(fontSize: 8)),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 1),
+
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(2),
+                      color: Color(0xFFEAECF0),
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(Icons.punch_clock, size: 8),
+
+                        Text(duration, style: TextStyle(fontSize: 8)),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
+
 
           Padding(
-            padding: const EdgeInsets.all(5.0),
+            padding: const EdgeInsets.all(3.5),
             child: Container(
               child: Column(
 
